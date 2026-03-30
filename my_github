@@ -1,0 +1,106 @@
+<div class="header__text-box row">
+    <div class="header__text">
+        <h1 class="heading-primary">
+        <!-- Replace the following name with your name -->
+        <span>Jane Hawkins</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>Hi my name is Jane and I am a Data Science Graduate from University of Oregon. My focus is in Earth Science, and I am currently looking for work!</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+    </div>
+</div>
+<div class="work__box">
+    <div class="work__text">
+    <h3>Portfolio Template</h3>
+    <p>
+        A free Open Source Portfolio for anyone to use for free.
+    </p>
+    <ul class="work__list">
+        <li>Python</li>
+        <li>ArcGIS</li>
+        <li>C</li>
+        <li>Microsoft Excel</li>
+        <li>UNIX</li>
+        <li>SQL</li>
+    </ul>
+
+    <div class="work__links">
+        <a href="#" class="link__text">
+        Visit Site <span>&rarr;</span>
+        </a> 
+        <a href="https://github.com/jane-h20/'Personal Projects'" target="_blank">
+        <img src="./images/github.earth_background.jpg" class="work__code" alt="GitHub">
+        </a>
+    </div>
+    </div>
+    <div class="work__image-box">
+        <img
+            src="./images/tornado_pic.jpg"
+            class="work__image"
+            alt="Project 1"
+        />
+    </div>
+    </div>
+    <div class="work__image-box">
+        <img
+            src="./images/Lakes&Trails_Layout.png"
+            class="work__image"
+            alt="Project 2"
+        />
+    </div>
+</div>
+<section class="about" id="about">
+    <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+            <div class="about__text">
+                <!-- Replace the below paragraph with info about yourself -->
+                <p>
+                My name is Jane Hawkins and I am a recent graduate from University of Oregon 
+                School of Computer and Data Sciences. I have a Bachelors degree in Data Science
+                with minors in both Computer and Earth Sciences. What I love most about data science 
+                is problem solving and utilizing my coding abilities in order to visualize statistics
+                and build models to acheive different outcomes. I am currently looking for work and would
+                love for you to check out my resume and portfolio!
+                </p>
+                <!-- Provide a link to your resume -->
+                <a href="#" class="btn">My Resume</a>
+            </div>
+
+            <div class="about__photo-container">
+                <!-- Add a nice photo of yourself -->
+                <img
+                class="about__photo"
+                src="./images/IMG_0356.jpeg"
+                alt=""
+                />
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+      <div class="row">
+        <h2>Get in Touch</h2>
+        <div class="contact__info">
+          <!-- Replace the email with yours -->
+          <a href="mailto:hawkinsjane72@gmail.com" class="btn">hawkinsjane72@gmail.com</a>
+        </div>
+      </div>
+</section>
+<footer role="contentinfo" class="footer">
+    <div class="row">
+        <!-- Update the links to point to your accounts -->
+        <ul class="footer__social-links">
+            <li class="footer__social-link-item">
+                <a href="https://github.com/jane-h20/">
+                    <img src="./images/github_img.svg" class="footer__social-image" alt="Github">
+                </a>
+            </li>
+            <li class="footer__social-link-item">
+                <a href=https://www.linkedin.com/in/jane-hawkins-3141592653abc/">
+                    <img src="./images/LinkedIn_icon.svg" class="footer__social-image" alt="Linkedin">
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
