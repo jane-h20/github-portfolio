@@ -1,106 +1,241 @@
-<div class="header__text-box row">
-    <div class="header__text">
+<!-- 
+  Hello 😊.
+
+  This template is designed and developed by Nisar Hassan Naqvi
+  for anyone to use for free or customize the way they like.
+
+  Github Repo: https://github.com/nisarhassan12/portfolio-template/
+  My Website: https://nisar.dev
+
+  For business & inquires, contact me => syednisarhassan12@gmail.com
+-->
+
+<!--
+  Follow the instructions written in comments to create your stunning portfolio
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/earth_background.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Jane Hawkins | Data Science Graduate open to work.
+  </title>
+
+  <meta name="description" content="Add small description of yourself.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
         <h1 class="heading-primary">
-        <!-- Replace the following name with your name -->
-        <span>Jane Hawkins</span>
+          <!-- Replace the following name with your name -->
+          <span>Jane Hawkins</span>
         </h1>
         <!-- Put a small paragraph about yourself -->
-        <p>Hi my name is Jane and I am a Data Science Graduate from University of Oregon. My focus is in Earth Science, and I am currently looking for work!</p>
+        <p>Data Science Graduate from University of Oregon with a focus is in Earth Science.</p>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
     </div>
-</div>
-<div class="work__box">
-    <div class="work__text">
-    <h3>Portfolio Template</h3>
-    <p>
-        A free Open Source Portfolio for anyone to use for free.
-    </p>
-    <ul class="work__list">
-        <li>Python</li>
-        <li>ArcGIS</li>
-        <li>C</li>
-        <li>Microsoft Excel</li>
-        <li>UNIX</li>
-        <li>SQL</li>
-    </ul>
+  </header>
 
-    <div class="work__links">
-        <a href="#" class="link__text">
-        Visit Site <span>&rarr;</span>
-        </a> 
-        <a href="https://github.com/jane-h20/'Personal Projects'" target="_blank">
-        <img src="./images/github.earth_background.jpg" class="work__code" alt="GitHub">
-        </a>
-    </div>
-    </div>
-    <div class="work__image-box">
-        <img
-            src="./images/tornado_pic.jpg"
-            class="work__image"
-            alt="Project 1"
-        />
-    </div>
-    </div>
-    <div class="work__image-box">
-        <img
-            src="./images/Lakes&Trails_Layout.png"
-            class="work__image"
-            alt="Project 2"
-        />
-    </div>
-</div>
-<section class="about" id="about">
-    <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-            <div class="about__text">
-                <!-- Replace the below paragraph with info about yourself -->
-                <p>
-                My name is Jane Hawkins and I am a recent graduate from University of Oregon 
-                School of Computer and Data Sciences. I have a Bachelors degree in Data Science
-                with minors in both Computer and Earth Sciences. What I love most about data science 
-                is problem solving and utilizing my coding abilities in order to visualize statistics
-                and build models to acheive different outcomes. I am currently looking for work and would
-                love for you to check out my resume and portfolio!
-                </p>
-                <!-- Provide a link to your resume -->
-                <a href="#" class="btn">My Resume</a>
-            </div>
+  <main role="main">
 
-            <div class="about__photo-container">
-                <!-- Add a nice photo of yourself -->
-                <img
-                class="about__photo"
-                src="./images/IMG_0356.jpeg"
-                alt=""
-                />
-            </div>
-        </div>
-    </div>
-</section>
-<section class="contact" id="contact">
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
       <div class="row">
-        <h2>Get in Touch</h2>
-        <div class="contact__info">
-          <!-- Replace the email with yours -->
-          <a href="mailto:hawkinsjane72@gmail.com" class="btn">hawkinsjane72@gmail.com</a>
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Portfolio Template</h3>
+              <p>
+                A free Open Source Portfolio for anyone to use for free.
+              </p>
+            <ul class="work__list">
+                <li>Python</li>
+                <li>ArcGIS</li>
+                <li>C</li>
+                <li>Microsoft Excel</li>
+                <li>UNIX</li>
+                <li>SQL</li>
+            </ul>
+
+                <a href="https://github.com/jane-h20/github-portfolio" title="View Source Code" target="_blank">
+                  <img src="./images/github_img.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/earth_background.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Tornado Magnitude Predictor</h3>
+              <p>
+                Built a machine learning model to predict the mangitude of tornado based 
+                on the amount of damage done by the event.
+              </p>
+              <ul class="work__list">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node</li>
+                <li>MongoDB</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="#">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/tornado_pic.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Lost Hiker Maps</h3>
+              <p>
+                Explore an area of Oregon using cost distance modeling to find the best areas to look for a
+                (hypothetical) lost hiker. Maps created using ArcGIS.
+              </p>
+              <ul class="work__list">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node</li>
+                <li>MongoDB</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="#">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Lakes&Trails_Layout.png" class="work__image" alt="Project 2" />
+            </div>
+          </div>
         </div>
       </div>
-</section>
-<footer role="contentinfo" class="footer">
+    </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+            My name is Jane Hawkins and I am a recent graduate from University of Oregon 
+            School of Computer and Data Sciences. I have a Bachelors degree in Data Science
+            with minors in both Computer and Earth Sciences. What I love most about data science 
+            is problem solving and utilizing my coding abilities in order to visualize statistics
+            and build models to acheive different outcomes. I am currently looking for work and would
+            love for you to check out my resume and portfolio!
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="./Hawkins_Jane_Resume.pdf" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/IMG_0356.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
     <div class="row">
-        <!-- Update the links to point to your accounts -->
-        <ul class="footer__social-links">
-            <li class="footer__social-link-item">
-                <a href="https://github.com/jane-h20/">
-                    <img src="./images/github_img.svg" class="footer__social-image" alt="Github">
-                </a>
-            </li>
-            <li class="footer__social-link-item">
-                <a href=https://www.linkedin.com/in/jane-hawkins-3141592653abc/">
-                    <img src="./images/LinkedIn_icon.svg" class="footer__social-image" alt="Linkedin">
-                </a>
-            </li>
-        </ul>
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <!-- Replace the email with yours -->
+        <a href="mailto:hawkinsjane72@gmail.com" class="btn">hawkinsjane72@gmail.com</a>
+      </div>
     </div>
-</footer>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/jane-h20/" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/jane-hawkins-3141592653abc/">
+            <img src="./images/LinkedIn_icon.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <p>
+        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+      </p>
+      <div class="footer__github-buttons">
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
+          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
+        </iframe>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
