@@ -31,6 +31,34 @@
   <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
   <meta name="keywords" content="Put your name, skills and some coding keywords" />
   <link rel="stylesheet" href="index.css" />
+
+  <!-- Extra styles for the new work-section category headings. -->
+  <!-- Move these into index.css whenever you get a chance; kept inline here so nothing breaks. -->
+  <style>
+    .work__category {
+      margin-bottom: 3rem;
+    }
+
+    .work__category:last-child {
+      margin-bottom: 0;
+    }
+
+    .work__category-title {
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      color: inherit;
+      margin-bottom: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid currentColor;
+      opacity: 0.85;
+    }
+
+    .work__category-intro {
+      margin-bottom: 2rem;
+      max-width: 60rem;
+    }
+  </style>
 </head>
 
 <body>
@@ -72,109 +100,142 @@
     <section class="work" id="work">
       <div class="row">
         <h2>My Work</h2>
-        <div class="work__boxes">
 
-          <!-- Each div with the work__box class is a project. -->
+        <!-- ================= CATEGORY 1: Data Science & Machine Learning ================= -->
+        <div class="work__category">
+          <h3 class="work__category-title">Data Science &amp; Machine Learning</h3>
+          <p class="work__category-intro">
+            Projects applying Python and machine learning to prediction and classification problems.
+          </p>
+          <div class="work__boxes">
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Mapping Lakes & Trails in a Different Region</h3>
-              <p>
-                Prediction and Classification
-                
-              </p>
-            <ul class="work__list">
-                <li>Python</li>
-                <li>Pandas</li>
-                <li>Seaborn</li>
-                <li>matplotlib</li>
-                <li>scikitlearn</li>
-            </ul>
-              <p>
-                Maps
-              </p>
-            <ul class="work__list">
-                <li>ArcGIS</li>
-                <li>QGIS</li>
-            </ul>
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Tornado Magnitude Predictor</h3>
+                <p>
+                  Built a machine learning model to predict the magnitude of a tornado based
+                  on the amount of damage done by the event.
+                </p>
+                <ul class="work__list">
+                  <li>Python</li>
+                  <li>Pandas</li>
+                  <li>Scikit-learn</li>
+                </ul>
 
-                <a href="https://github.com/jane-h20/jane-h20.github.io/tree/main/Personal%20Projects" title="View Source Code" target="_blank">
-                  <img src="./images/github_logo.png" class="work__code" alt="GitHub">
-                </a>
+                <div class="work__links">
+                  <a href="https://github.com/jane-h20/jane-h20.github.io/tree/main/Personal%20Projects/Project1" class="link__text">
+                    Visit Site <span>&rarr;</span>
+                  </a>
+                  <a href="https://github.com/jane-h20/jane-h20.github.io/tree/main/Personal%20Projects/Project1">
+                    <img src="./images/github_logo.png" class="work__code" title="View Source Code" alt="GitHub">
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/tornado_pic.png" class="work__image" alt="Tornado magnitude predictor visualization" />
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/Projects.svg" class="work__image" alt="Project 1" />
-            </div>
-          </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Tornado Magnitude Predictor</h3>
-              <p>
-                Built a machine learning model to predict the mangitude of tornado based 
-                on the amount of damage done by the event.
-              </p>
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Satellite Image Classification</h3>
+                <p>
+                  Built a neural network to classify satellite images based on the UC Merced land use dataset.
+                  Images are classified into 21 different classes.
+                </p>
+                <ul class="work__list">
+                  <li>Python</li>
+                  <li>TensorFlow / Keras</li>
+                  <li>Neural Networks</li>
+                </ul>
 
-              <div class="work__links">
-                <a href="https://github.com/jane-h20/jane-h20.github.io/tree/main/Personal%20Projects/Project1" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/jane-h20/jane-h20.github.io/tree/main/Personal%20Projects">
-                  <img src="./images/github_logo.png" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
+                <div class="work__links">
+                  <a href="https://github.com/jane-h20/jane-h20.github.io/tree/main/Personal%20Projects/Project2" class="link__text">
+                    Visit Site <span>&rarr;</span>
+                  </a>
+                  <a href="https://github.com/jane-h20/jane-h20.github.io/tree/main/Personal%20Projects/Project2">
+                    <img src="./images/github_logo.png" class="work__code" title="View Source Code" alt="GitHub">
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/harbor00.jpg" class="work__image" alt="Satellite image classification example" />
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/tornado_pic.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Image Classification</h3>
-              <p>
-                Built a neural network to classify satellite images based on the UC Merced land use dataset.
-                Images are calssified into 21 different classes.
-              </p>
-
-              <div class="work__links">
-                <a href="https://github.com/jane-h20/jane-h20.github.io/tree/main/Personal%20Projects/Project2" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/jane-h20/jane-h20.github.io/tree/main/Personal%20Projects/Project2">
-                  <img src="./images/github_logo.png" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/harbor00.jpg" class="work__image" alt="Project 2" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Maps</h3>
-              <p>
-                I have created various exploratory maps for different purposes including finding a lost hiker,
-                finding the best places in Eugene, OR for e-scooter hubs, and more. I used many skills in both
-                ArcGIS and QGIS to make these using both supervised and unsupervised machine learning tools.
-              </p>
-
-              <div class="work__links">
-                <a href="https://github.com/jane-h20/jane-h20.github.io/tree/main/Personal%20Projects/Project3" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/jane-h20/jane-h20.github.io/tree/main/Personal%20Projects/Project3">
-                  <img src="./images/github_logo.png" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/Lakes&Trails_Layout.png" class="work__image" alt="Project 2" />
-            </div>
           </div>
         </div>
+
+        <!-- ================= CATEGORY 2: GIS & Mapping ================= -->
+        <div class="work__category">
+          <h3 class="work__category-title">GIS &amp; Mapping</h3>
+          <p class="work__category-intro">
+            Exploratory and analytical mapping work built with ArcGIS and QGIS.
+          </p>
+          <div class="work__boxes">
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Mapping Lakes &amp; Trails in a Different Region</h3>
+                <p>
+                  Prediction and classification of lakes and trails using supervised and unsupervised
+                  machine learning tools alongside traditional GIS workflows.
+                </p>
+                <ul class="work__list">
+                  <li>Python</li>
+                  <li>Pandas</li>
+                  <li>Seaborn</li>
+                  <li>Matplotlib</li>
+                  <li>Scikit-learn</li>
+                  <li>ArcGIS</li>
+                  <li>QGIS</li>
+                </ul>
+
+                <div class="work__links">
+                  <a href="https://github.com/jane-h20/jane-h20.github.io/tree/main/Personal%20Projects" class="link__text">
+                    Visit Site <span>&rarr;</span>
+                  </a>
+                  <a href="https://github.com/jane-h20/jane-h20.github.io/tree/main/Personal%20Projects" title="View Source Code" target="_blank">
+                    <img src="./images/github_logo.png" class="work__code" alt="GitHub">
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/Projects.svg" class="work__image" alt="Mapping lakes and trails project overview" />
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Community Planning &amp; Search Maps</h3>
+                <p>
+                  Created various exploratory maps for different purposes, including locating a lost hiker
+                  and identifying the best locations in Eugene, OR for e-scooter hubs, using supervised
+                  and unsupervised machine learning tools in ArcGIS and QGIS.
+                </p>
+                <ul class="work__list">
+                  <li>ArcGIS</li>
+                  <li>QGIS</li>
+                  <li>Spatial Analysis</li>
+                </ul>
+
+                <div class="work__links">
+                  <a href="https://github.com/jane-h20/jane-h20.github.io/tree/main/Personal%20Projects/Project3" class="link__text">
+                    Visit Site <span>&rarr;</span>
+                  </a>
+                  <a href="https://github.com/jane-h20/jane-h20.github.io/tree/main/Personal%20Projects/Project3">
+                    <img src="./images/github_logo.png" class="work__code" title="View Source Code" alt="GitHub">
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/Lakes&Trails_Layout.png" class="work__image" alt="Eugene Oregon e-scooter hub site suitability map" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -240,7 +301,7 @@
 
       <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
       <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+        &copy; 2020 - Template designed &amp; developed by <a href="https://nisar.dev" class="link">Nisar</a>.
       </p>
       <div class="footer__github-buttons">
         <iframe
